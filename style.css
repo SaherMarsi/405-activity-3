@@ -1,0 +1,155 @@
+*{ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+}
+aside ul{
+    list-style-type: none;;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    background-color: #f56666;
+}
+aside h1{
+    padding: 14px 18px;
+    text-align: center;
+}
+
+li a{
+    display: block;
+    color: azure;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+li{ 
+    float: left;
+}
+
+li a:hover{
+    background-color: black;
+}
+
+footer{
+    background-color: black;
+}
+footer p{
+    font-style: italic;
+    color: azure;
+}
+.eventname{
+    font-size: 14px;
+    display: inline;
+}
+.eventdes{
+    display: inline;
+}
+label{ 
+    display: block;
+    font-size: 16px;
+}
+
+.eventname, .eventdes, .name, .email, .pass{ 
+    padding: 4px 7px;
+    margin: 4px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.start{
+    display: inline;
+    padding: 4px 7px;
+    margin: 4px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.end{
+    display: inline;
+    padding: 4px 7px;
+    margin: 4px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.time{
+    display: block;
+    padding: 4px 7px;
+    margin: 4px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.Availability{
+    text-align: center;
+}
+
+.tbavail{
+    margin-left: auto;
+    margin-right: auto;
+}
+.tbavail thead{ 
+    border-bottom: 1px solid #ddd;
+    color: black;
+}
+.tbavail thead tr th, tr{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.tbresults{
+    margin-left: auto;
+    margin-right: auto;
+}
+.tbresults thead{ 
+    border-bottom: 1px solid #ddd;
+    color: black;
+}
+.tbresults thead tr th, tr{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.submitava, .submiteve{
+    border: none;
+    background-color: #f56666 ;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+    font-size: 18px;
+    padding: 12px 30px;
+}
+.submitava:hover,.submiteve:hover{
+    background-color: #f3c5c5 ;
+}
+.sigup{   
+    font-style: bold;
+    border: none;
+    background-color: #f56666 ;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+select option{
+    padding: 4px 7px;
+    margin: 4px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
