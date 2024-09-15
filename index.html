@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="#Sign up" href="sign up.html">
+</head>
+
+<body>
+    <div class="contentNV">
+
+        <h1>When2Meet</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Create Event</a></li>
+                <li><a href="#Availability">Select Availability</a></li>
+                <li><a href="#Results">View Results</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="content_index">
+        <div class="div1">
+
+            <div class="contentCE">
+                <h2 id="Create Event" class="Create_Event">Create Event</h2>
+
+                <form action="" method="post">
+
+                    <label for="eventname" class="eventnamelb">EVENT NAME</label>
+                    <input type="text" name="eventname" id="eventname" class="eventname" placeholder="Event name..">
+
+                    <label for="eventdes" class="eventdeslb">EVENT DESCRIPTION</label>
+                    <textarea name="eventdes" id="eventdes" class="eventdes" rows="1"
+                        placeholder="Description.."></textarea>
+
+                    <label for="start" class="startlb">START DATE</label>
+                    <input type="date" name="start" id="start" class="start">
+
+                    <label for="end" class="endlb">END DATE</label>
+                    <input type="date" name="end" id="end" class="end">
+
+                    <label for="time" class="timelb">TIME INCREMENT</label>
+                    <select name="time" id="time">
+                        <option value="15 minutes">15 minutes</option>
+                        <option value="30 minutes">30 minutes</option>
+                        <option value="45 minutes">45 minutes</option>
+                        <option value="60 minutes">60 minutes</option>
+                    </select>
+
+                    <input type="submit" name="time" id="time" value="CREATE EVENT" class="submiteve">
+                </form>
+
+            </div>
+
+            <div class="contentAV">
+
+                <h2 id="Availability" class="Availability">Input Availability</h2>
+                <table class="tbavail">
+
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <form action="" method="post">
+                            <td><input type="checkbox" name="day" id="day"></td>
+                            <td><input type="checkbox" name="day" id="day"></td>
+                            <td><input type="checkbox" name="day" id="day"></td>
+                            <td><input type="checkbox" name="day" id="day"></td>
+                            <td><input type="checkbox" name="day" id="day"></td>
+                        </form>
+                    </tr>
+                </table>
+                <input type="submit" name="day" id="day" value="SUBMIT AVAILABILITY" class="submitava">
+            </div>
+        </div>
+        <div class="div2">
+
+            <div class="contentRE">
+                <h2 id="Results">View Results</h2>
+                
+                <table class="tbresults">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>3 available</td>
+                        <td>2 available</td>
+                        <td>4 available</td>
+                        <td>1 available</td>
+                        <td>5 available</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        <p class="lonelyp">Shareable Link:<a href="https://when2meet.com/event?id=123456">https://when2meet.com/event?id=123456</a></p>
+
+        <footer>
+            <p>&copy; 2024 When2Meet. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

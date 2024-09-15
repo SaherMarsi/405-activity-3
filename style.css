@@ -1,156 +1,190 @@
-*{ 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT';
 }
-body{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 50%;
-}
-aside ul{
-    list-style-type: none;;
-    padding: 0;
-    overflow: hidden;
+
+.body {
     margin: 0;
-    background-color: #f56666;
-}
-aside h1{
-    padding: 14px 18px;
-    text-align: center;
 }
 
-li a{
-    display: block;
-    color: azure;
-    text-align: center;
-    padding: 14px 18px;
+.content_index {
+    margin-left: 200px;
+    padding-left: 20px;
+}
+
+.content_signup {
+    margin-left: 200px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+}
+
+.lonelyp {
+    display: flex;
+    justify-content: center;
+}
+
+.contentNV {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.contentNV h1 {
+    color: whitesmoke;
+    padding-left: 7px;
+}
+
+.contentNV a {
+    color: whitesmoke;
+    padding: 16px;
     text-decoration: none;
-}
-
-li{ 
-    float: left;
-}
-
-li a:hover{
-    background-color: black;
-}
-
-footer{
-    background-color: black;
-}
-footer p{
-    font-style: italic;
-    color: azure;
-}
-.eventname{
-    font-size: 14px;
-    display: inline;
-}
-.eventdes{
-    display: inline;
-}
-label{ 
     display: block;
-    font-size: 16px;
 }
 
-.eventname, .eventdes, .name, .email, .pass{ 
-    padding: 4px 7px;
-    margin: 4px 0; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.start{
-    display: inline;
-    padding: 4px 7px;
-    margin: 4px 0; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.end{
-    display: inline;
-    padding: 4px 7px;
-    margin: 4px 0; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.time{
-    display: block;
-    padding: 4px 7px;
-    margin: 4px 0; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.Availability{
-    text-align: center;
-}
-
-.tbavail{
-    margin-left: auto;
-    margin-right: auto;
-}
-.tbavail thead{ 
-    border-bottom: 1px solid #ddd;
+.contentNV a:hover {
+    background-color: whitesmoke;
     color: black;
 }
-.tbavail thead tr th, tr{
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
+
+.contentNV nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.tbresults{
-    margin-left: auto;
-    margin-right: auto;
-}
-.tbresults thead{ 
-    border-bottom: 1px solid #ddd;
-    color: black;
-}
-.tbresults thead tr th, tr{
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
+
+.contentCE {
+    width: 20%;
+    padding: 14px 14px;
+    margin: 4px 0;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;
 }
 
-.submitava, .submiteve{
+.contentCE form {
+    width: 100%;
+}
+
+.contentCE form input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 4px 8px;
+    margin: 4px 0;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contentSU {
+    width: 20%;
+    padding: 4px 7px;
+    margin: 4px 0;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;
+}
+
+.contentSU form input {
+    display: block;
+    width: 100%;
+    padding: 4px 7px;
+    margin: 4px 0;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.sigup {
     border: none;
-    background-color: #f56666 ;
+    background-color: rgb(0, 0, 0);
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.submitava,
+.submiteve {
+    background-color: black;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 13px;
     font-size: 18px;
     padding: 12px 30px;
+    color: whitesmoke;
 }
-.submitava:hover,.submiteve:hover{
-    background-color: #f3c5c5 ;
-}
-.sigup{   
-    font-style: bold;
-    border: none;
-    background-color: #f56666 ;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 13px;
-    font-size: 16px;
-    padding: 10px 20px;
+.submitava{
+    display: flex;
+    justify-content: center;
 }
 
-select option{
+.submitava:hover,
+.submiteve:hover,
+.sigup:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.contentAV,
+.contentRE {
+    width: 25%;
+    padding: 4px 8px;
+    margin: 4px 0;
+    /* border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px; */
+    box-sizing: border-box;
+}
+
+.tbavail thead,
+.tbresults thead {
+    border-bottom: 1px solid #ddd;
+    color: black;
+    width: 100%;
     padding: 4px 7px;
-    margin: 4px 0; 
-    border: 1px solid #ccc;
+    margin: 4px 0;
+    border: 1px solid rgb(202, 202, 202);
     border-radius: 4px;
     box-sizing: border-box;
 }
 
+.tbavail thead tr th,
+tr,
+.tbresults thead tr th,
+tr {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: black;
+    font-style: italic;
+    font-size: small;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
