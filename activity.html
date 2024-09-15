@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    
     <link rel="stylesheet" href="style.css">
     <link rel="#Sign up" href="sign up.html">
 </head>
@@ -12,73 +11,75 @@
     <aside>
         <h1>When2Meet</h1>
         <ul>
-            <li><a href="#Create Event">Create Event</a></li>
+            <li><a href="#Create Event" href="/activity.html">Create Event</a></li>
             <li><a href="#Availability">Select Availability</a></li>
             <li><a href="#Results">View Results</a></li>
-            <li style="float: right;"><a class=active href="http://127.0.0.1:5500/sign%20up.html">Sign up</a></li>
+            <li style="float: right;"><a class=active href="signup.html">Sign up</a></li>
         </ul>
     </aside> 
 
-    <h2 id="Create Event">Create Event</h2>
 
-    <form action="" method="post">
+        <h2 id="Create Event">Create Event</h2>
+        
+        <form action="" method="post">
+            
+            <label for="eventname">EVENT NAME</label>
+            <input type="text" name="eventname" id="eventname" class="eventname" placeholder="Event name.."> 
 
-        <label for="eventname">EVENT NAME</label>
-        <input type="text" name="eventname" id="eventname" class="eventname" placeholder="Event name.."> 
-        <br><br>
-        <label for="eventdes">EVENT DESCRIPTION</label>
-        <textarea name="eventdes" id="eventdes" class="eventdes" rows="1" placeholder="Description.."></textarea>
-        <br><br>
-        <label for="start">START DATE</label>
-        <input type="date" name="start" id="start" class="start"  >
-        <br><br>
-        <label for="end">END DATE</label>
-        <input type="date" name="end" id="end" class="end" >
-        <br><br>
-        <label for="time">TIME INCREMENT</label>
-        <select name="time" id="time">
-            <option value="15 minutes">15 minutes</option>
-            <option value="30 minutes">30 minutes</option>
-            <option value="45 minutes">45 minutes</option>
-            <option value="60 minutes">60 minutes</option>
-        </select>
-        <br><br>
-        <input type="submit" name="time" id="time" value="CREATE EVENT" class="submiteve">
-    </form>
+            <label for="eventdes">EVENT DESCRIPTION</label>
+            <textarea name="eventdes" id="eventdes" class="eventdes" rows="1" placeholder="Description.."></textarea>
 
-    <h2 id="Availability" class="Availability">Input Availability</h2>
+            <label for="start">START DATE</label>
+            <input type="date" name="start" id="start" class="start"  >
 
-    <table class="tbavail">
+            <label for="end">END DATE</label>
+            <input type="date" name="end" id="end" class="end" >
 
-        <thead>
+            <label for="time">TIME INCREMENT</label>
+            <select name="time" id="time">
+                <option value="15 minutes">15 minutes</option>
+                <option value="30 minutes">30 minutes</option>
+                <option value="45 minutes">45 minutes</option>
+                <option value="60 minutes">60 minutes</option>
+            </select>
+
+            <input type="submit" name="time" id="time" value="CREATE EVENT" class="submiteve">
+        </form>
+        
+        <h2 id="Availability" class="Availability">Input Availability</h2>
+        
+        <table class="tbavail">
+            
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
             <tr>
-                <th>Time</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
+                <td>9:00 AM</td>
+                <form action="" method="post">
+                    <td><input type="checkbox" name="day" id="day"></td>
+                    <td><input type="checkbox" name="day" id="day"></td>
+                    <td><input type="checkbox" name="day" id="day"></td>
+                    <td><input type="checkbox" name="day" id="day"></td>
+                    <td><input type="checkbox" name="day" id="day"></td>
+                </form>
             </tr>
-        </thead>
-        <tr>
-            <td>9:00 AM</td>
-            <form action="" method="post">
-                <td><input type="checkbox" name="day" id="day"></td>
-                <td><input type="checkbox" name="day" id="day"></td>
-                <td><input type="checkbox" name="day" id="day"></td>
-                <td><input type="checkbox" name="day" id="day"></td>
-                <td><input type="checkbox" name="day" id="day"></td>
-            </form>
-        </tr>
-
-    </table>
-
-    <input type="submit" name="day" id="day" value="SUBMIT AVAILABILITY" class="submitava">
-
-    <h2 id="Results">View Results</h2>
-
-    <table class="tbresults">
-        <thead>
+            
+        </table>
+        
+        <input type="submit" name="day" id="day" value="SUBMIT AVAILABILITY" class="submitava">
+        
+ 
+        <h2 id="Results">View Results</h2>
+        
+        <table class="tbresults">
+            <thead>
             <tr>
                 <th>Time</th>
                 <th>Monday</th>
